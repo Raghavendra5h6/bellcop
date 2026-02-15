@@ -1,0 +1,82 @@
+.history-page h1 {
+  margin: 0 0 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.history-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.history-filters input,
+.history-filters select {
+  padding: 0.5rem 0.75rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--text);
+  font-size: 0.9375rem;
+}
+
+.filter-search {
+  min-width: 220px;
+}
+
+.history-table-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.history-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9375rem;
+}
+
+.history-table th,
+.history-table td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+  background: var(--surface);
+}
+
+.history-table th {
+  font-weight: 600;
+  color: var(--text-muted);
+  font-size: 0.8125rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.history-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.history-table .num {
+  text-align: right;
+}
+
+.history-table .amount.income,
+.history-table tr.income .amount { color: var(--income); }
+.history-table .amount.expense,
+.history-table tr.expense .amount { color: var(--expense); }
+
+.badge {
+  display: inline-block;
+  padding: 0.2rem 0.5rem;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.tr.income .badge { background: rgba(34, 197, 94, 0.2); color: var(--income); }
+.tr.expense .badge { background: rgba(239, 68, 68, 0.2); color: var(--expense); }
+
+tr.income .badge { background: rgba(34, 197, 94, 0.2); color: var(--income); }
+tr.expense .badge { background: rgba(239, 68, 68, 0.2); color: var(--expense); }
